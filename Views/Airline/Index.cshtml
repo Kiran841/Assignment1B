@@ -1,0 +1,31 @@
+﻿
+
+<a asp-controller="Airline" asp-action="AddFlight"> Add a new Flight</a>
+
+<ul>
+    @foreach (var f in Model)
+    {
+        <li>
+            <a asp-controller="Airline" asp-action="Reservation" asp-route-flight="@f.Name">  @f.Name </a>
+        </li>
+    }
+</ul>
+@*<h1><i>Hello everyone...Welcome to my application :)</i></h1>
+    <h3>Here's the list of options that you can choose:</h3>
+    <body style="background-color:#ffd800">
+    </body>
+
+    <ul>
+        <li>
+            <a asp-controller = "Airline" asp-action = "Reservation" asp-route-flight = "ViewFlights" >View flights</a>
+        </li>
+        <li>
+            <a asp-controller="Airline" asp-action="Reservation" asp-route-flight = "BookFlights">Book flights</a>
+        </li>
+        <li>
+            <a asp-controller="Airline" asp-action="Reservation" asp-route-flight = "CancelFlights">Cancel flights</a>
+        </li>
+        <li>
+            <a asp-controller="Airline" asp-action="Reservation" asp-route-flight = "Send Feedback">Send Feedback</a>
+        </li>
+    </ul>*@
